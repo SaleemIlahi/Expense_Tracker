@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+
+:root{
+    --blue-color: #242582;
+    --green-color: #5cdb95;
+    --red-color: #f64c72;
+    --white-color: #fff;
+    --black-color: #000;
+}
+.fas{
+    font-size: 1.2rem;
+    padding-right: 10px;
+}
+.tracker-container{
+    background: var(--blue-color);
+    color: #fff;
+}
+.track-title{
+    font-size: 3rem;
+}
+.track-card{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.balance{
+    margin: 30px 0;
+    font-size: 3rem;
+}
+
+.account{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.income-value{
+    color: var(--green-color);
+}
+.expense-value{
+    color: var(--red-color);
+}
+svg{
+    width: 140px;
+    height: 140px;
+    margin: -40px 50px 20px 50px;
+}
+
+/* Chart Section */
+.income-circle-arc{
+    stroke: var(--green-color); 
+    stroke-width: 20;
+    fill: none;
+    stroke-dasharray: 360;
+}
+.expense-circle-arc{ 
+    stroke: var(--red-color); 
+    stroke-width: 20;
+    fill: none;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 180;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Display Section  */
+.track-display{
+    background: var(--black-color);
+    border-radius: 50px 50px 0 0;
+}
+ul{
+    margin: 0px 100px;
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+ul li.active a{
+    color: var(--white-color);
+}
+ul li a{
+    background: transparent;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255,0.5);
+}
+ul li a:hover{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.track-details{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.track-details .active{
+    display: block;
+}
+.track-details .fas{
+    font-size: .9rem;
+    padding-right: 5px;
+}
+.allDetials,
+.incomeDetials,
+.expenseDetials{
+    display: none;
+}
+.incomeDetials table tbody{
+    color: var(--green-color);
+}
+.expenseDetials table tbody{
+    color: var(--red-color);
+}
+.table{
+    width: 900px;
+}
+
+/* input Section */
+.track-input{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+.track-input input{
+    border: 1px solid var(--white-color);
+    outline: none;
+    background: none;
+    color: var(--white-color);
+    padding: 0 10px;
+}
+.track-input .title{
+    width: 300px;
+}
+.track-input .button{
+    margin-left: 40px;
+}
+.track-input .button button{
+    background: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+}

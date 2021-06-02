@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <script src="https://kit.fontawesome.com/e4c726126a.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <section class="container">
+        <div class="tracker-container">
+            <h1 class="text-center track-title">Expense Tracker</h1>
+            <div class="track-card">
+                <div class="balance">
+                    <h2 class="balance-title">Balance</h2>
+                    <h2 class="balance-value"><i class="fas fa-rupee-sign"></i><span>00</span></h2>
+                </div>
+                <div class="account">
+                    <div class="income">
+                        <h2 class="income-title">Income</h2>
+                        <h2 class="income-value"><i class="fas fa-rupee-sign"></i><span>00</span></h2>
+                    </div>
+                    <svg viewBox="0 0 160 160">
+                        <circle class="income-circle-arc" cx='80' cy='80' r='57' />
+                        <circle class="expense-circle-arc" cx='80' cy='80' r='57' />
+                     </svg>
+                    <div class="expense">
+                        <h2 class="expense-title">Expense</h2>
+                        <h2 class="expense-value"><i class="fas fa-rupee-sign"></i><span>00</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="track-display">
+                <ul class="track-nav">
+                    <li><a href="#">Income</a></li>
+                    <li><a href="#">Expense</a></li>
+                    <li class="active"><a href="#">All</a></li>
+                </ul>
+                <div class="track-details">
+                    <div class="incomeDetials">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="expenseDetials">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="allDetials active">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="track-input">
+                    <input type="text" class="title" placeholder="Title" />
+                    <input type="text" class="price" placeholder="00" />
+                    <div class="button">
+                        <button class="income-btn">Income</button>
+                        <button class="expense-btn">Expense</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Javascript File -->
+    <script src="js/index.js"></script>
+</body>
+</html>
